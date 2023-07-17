@@ -11,7 +11,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gym-landing-terraform-state"
+    bucket = "gym-landing-terraform-state-159"
     key    = "gym-landing-terraform-state-key"
     region = "us-east-1"
   }
