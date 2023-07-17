@@ -13,11 +13,11 @@ terraform {
   backend "s3" {
     bucket = "gym-landing-terraform-state"
     key    = "gym-landing-terraform-state-key"
-    region = "us-east-1"
+    region = "ap-south-1"
   }
 }
 
 provider "aws" {
-  alias  = "us-east-1"
-  region = "us-east-1"
+  alias  = "ap-south-1"
+  region = "ap-south-1"
 }
