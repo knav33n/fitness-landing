@@ -48,6 +48,6 @@ jobs:
     - name: Build front-end
       run: npm run build
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./dist s3://gym-landing-portfolio
+      run: aws s3 sync ./dist s3://gym-landing-portfolio-986
     - name: Invalidate Cloudfront Cache
       run: aws cloudfront create-invalidation --distribution-id ${{steps.cloudfront_id.outputs.cf_var}} --paths "/*" --region us-east-1

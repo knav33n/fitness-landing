@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3" {
-  bucket = "gym-landing-portfolio"
+  bucket = "gym-landing-portfolio-986"
 
   lifecycle {
     create_before_destroy = true
